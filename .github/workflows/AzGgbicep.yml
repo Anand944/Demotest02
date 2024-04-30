@@ -51,6 +51,6 @@ jobs:
             creds: ${{ secrets.CREDENTIALS }}
      
       - name: az bicep deploy
-        working-directory: '${{github.workspace}}/SRC/Bicep'
+        working-directory: '${{github.workspace}}/SCR/bicep'
         run:
            az deployment sub create -l eastus -f ./AzRG.bicep
